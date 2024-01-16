@@ -1,0 +1,8 @@
+package annotation;
+
+public class Cage {
+	private Animal animal;
+	void animalSound() {
+		animal.sound();
+	}
+}

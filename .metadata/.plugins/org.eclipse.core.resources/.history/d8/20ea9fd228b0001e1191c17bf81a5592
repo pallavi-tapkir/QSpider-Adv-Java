@@ -1,0 +1,13 @@
+package fullyAnnotation;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration //to tell ioc container that instead of using xml we are using config class
+public class PersonMainMyConfiguration {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

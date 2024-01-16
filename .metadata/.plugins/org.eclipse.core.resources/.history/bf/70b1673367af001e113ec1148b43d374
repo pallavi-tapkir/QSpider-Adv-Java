@@ -1,0 +1,11 @@
+package annotation;
+
+import org.springframework.context.annotation.Bean;
+
+public class Cage {
+	@Bean(name="cow1")
+	private Animal animal;
+	void animalSound() {
+		animal.sound();
+	}
+}

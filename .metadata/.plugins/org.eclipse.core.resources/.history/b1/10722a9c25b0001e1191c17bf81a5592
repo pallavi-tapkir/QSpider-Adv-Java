@@ -1,0 +1,14 @@
+package annotation;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Cage {
+	@Autowired //to tell container that we are building a relation 
+	private Animal animal;
+	
+	void animalSound() {
+		animal.sound();
+	}
+}

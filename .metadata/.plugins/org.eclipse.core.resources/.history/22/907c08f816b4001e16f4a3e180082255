@@ -1,0 +1,8 @@
+package com.jsp.springboot_item.dao;
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class ItemDAO {
+
+}

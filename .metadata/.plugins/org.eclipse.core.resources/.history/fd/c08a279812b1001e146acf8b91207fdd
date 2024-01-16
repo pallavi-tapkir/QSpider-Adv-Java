@@ -1,0 +1,35 @@
+package com.pallavi.ds.adv;
+
+import java.util.ArrayList;
+import java.util.PriorityQueue;
+
+public class MaxProfitMinHeap {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public int solve(ArrayList<Integer> A, ArrayList<Integer> B) {
+        int profit = 0;
+        int time = 0;
+        PriorityQueue<Integer> minHeap = new PriorityQueue<Integer>();
+        for(int i=0; i<A.size(); i++){
+            if(time < A.get(i)){
+                minHeap.add(B.get(i));
+                time++;
+            }else{
+                if(B.get(i) > minHeap.peek()){
+                    minHeap.poll();
+                    minHeap.add(B.get(i));
+                }
+            }
+        }
+
+        while(!minHeap.isEmpty()){
+            profit = profit+minHeap.poll() % 1000000007;
+        }
+        return profit;
+    }
+
+}

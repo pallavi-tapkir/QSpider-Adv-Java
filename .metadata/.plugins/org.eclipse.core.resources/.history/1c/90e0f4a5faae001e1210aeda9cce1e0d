@@ -1,0 +1,29 @@
+package heap;
+
+public class ThreeGreaterNoProduct {
+	public static void main(String[] args) {
+		
+	}
+	
+	public static ArrayList<Integer> solve(ArrayList<Integer> A) {
+        PriorityQueue<Integer> minHeap = new PriorityQueue<Integer>(3);
+        ArrayList<Integer> ans = new ArrayList<Integer>();
+        int maxProduct = 1;
+        for(int i=0; i<A.size(); i++){
+            if(i<2){
+                ans.add(-1);
+                maxProduct = maxProduct * A.get(i);
+            }else {
+                if(A.get(i) > minHeap.peek()){
+                    int no = minHeap.poll();
+                    maxProduct = maxProduct / no;
+                    minHeap.add(A.get(i));
+                    maxProduct = maxProduct * A.get(i);
+                    ans.add(maxProduct);
+                }
+            }
+            
+        }
+        return ans;
+    }
+}

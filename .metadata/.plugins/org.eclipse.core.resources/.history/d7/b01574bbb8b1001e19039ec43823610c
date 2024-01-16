@@ -1,0 +1,70 @@
+package controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
+
+import dao.Employeedao;
+import springmvc_employee.dto.Employee;
+
+@Controller
+public class EmployeeController {
+	@Autowired
+	private Employeedao employeedao;
+	
+	@RequestMapping("/register")
+	public ModelAndView register() {
+		ModelAndView modelAndView = new ModelAndView();
+		modelAndView.addObject("employee", new Employee());
+		modelAndView.setViewName("register.jsp");
+		return modelAndView;
+	}
+	
+	@RequestMapping("/save")
+	public ModelAndView save(@ModelAttribute Employee employee) {
+		ModelAndView modelAndView = new ModelAndView();
+		employeedao.save(employee);
+		List<Employee> employees = employeedao.getAllEmployees();
+		modelAndView.addObject("employees", employees);
+		modelAndView.setViewName("display.jsp");
+		return modelAndView;
+	}
+	
+	@RequestMapping("/delete")
+	public ModelAndView delete(@RequestParam int id) {
+		ModelAndView modelAndView = new ModelAndView();
+		boolean b = employeedao.delete(id);
+		if(b) {
+			List<Employee> employees = employeedao.getAllEmployees();
+			modelAndView.addObject("employees", employees);
+			modelAndView.setViewName("display.jsp");
+		}else {
+			modelAndView.setViewName("register.jsp");
+		}
+		return modelAndView;
+	}
+	
+	@RequestMapping("/edit")
+	public ModelAndView edit(@RequestParam int id) {
+		ModelAndView modelAndView = new ModelAndView();
+		Employee employee = employeedao.getEmployeeById(id);
+		modelAndView.addObject(employee);
+		modelAndView.setViewName("edit.jsp");
+		return modelAndView;
+	}
+	
+	@RequestMapping("/update")
+	public ModelAndView update(@RequestParam Employee employee) {
+		ModelAndView modelAndView = new ModelAndView();
+		employeedao.update(employee);
+		List<Employee> employees = employeedao.getAllEmployees();
+		modelAndView.addObject("employees", employees);
+		modelAndView.setViewName("display.jsp");
+		return modelAndView;
+	}
+}

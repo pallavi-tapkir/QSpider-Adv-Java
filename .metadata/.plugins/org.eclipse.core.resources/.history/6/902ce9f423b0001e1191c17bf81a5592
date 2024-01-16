@@ -1,0 +1,13 @@
+package annotation;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+
+public class Cage {
+	@Autowired
+	private Animal animal;
+	
+	void animalSound() {
+		animal.sound();
+	}
+}

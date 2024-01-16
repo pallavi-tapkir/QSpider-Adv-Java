@@ -1,0 +1,15 @@
+package fullyAnnotation;
+
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration //to tell ioc container that instead of using xml we are using config class
+@ComponentScan (basePackages = "fullyAnnotation")
+public class MyConfiguration {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

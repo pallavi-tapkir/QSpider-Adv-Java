@@ -1,0 +1,19 @@
+package com.jsp.springboot_item.dto;
+
+public class Item {
+	private int id;
+	private String nameString;
+	private double cost;
+	
+	public Item() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Item(String nameString, double cost) {
+		super();
+		this.nameString = nameString;
+		this.cost = cost;
+	}
+	
+	
+}

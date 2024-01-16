@@ -1,0 +1,15 @@
+package springcore;
+
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class SchoolMain {
+
+	public static void main(String[] args) {
+		BeanFactory beanFactory = new ClassPathXmlApplicationContext("school.xml");
+		School school1 = (Gurukul) beanFactory.getBean("Gurukul");
+		School school2 = (DPA) beanFactory.getBean("DPA");
+//		school1.
+	}
+
+}

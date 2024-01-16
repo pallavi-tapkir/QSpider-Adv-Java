@@ -1,0 +1,11 @@
+package springcore;
+
+public class Gurukul implements School {
+
+	@Override
+	public void name() {
+		System.out.println("School name is Gurukul");
+		
+	}
+
+}

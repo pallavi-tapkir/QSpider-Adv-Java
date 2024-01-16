@@ -1,0 +1,5 @@
+package fullyAnnotation;
+
+public interface Item {
+
+}

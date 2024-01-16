@@ -1,0 +1,40 @@
+package heap;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.PriorityQueue;
+
+public class ThreeGreaterNoProduct {
+	public static void main(String[] args) {
+		System.out.println(solve(List.of(1,2,3,4,5)));
+	}
+	
+	public static ArrayList<Integer> solve(List<Integer> A) {
+        PriorityQueue<Integer> minHeap = new PriorityQueue<Integer>(3);
+        ArrayList<Integer> ans = new ArrayList<Integer>();
+        int maxProduct = 1;
+        for(int i=0; i<A.size(); i++){
+            
+            if(i<2){
+                ans.add(-1);
+                maxProduct = maxProduct * A.get(i);
+                minHeap.add(A.get(i));
+            }else {
+                if(A.get(i) > minHeap.peek()){
+                	if(minHeap.size() >=3) {
+	                    int no = minHeap.poll();
+	                    maxProduct = maxProduct / no;
+                	}
+                	
+                    maxProduct = maxProduct * A.get(i);
+                    
+                    minHeap.add(A.get(i));
+                }
+                ans.add(maxProduct);
+            }
+            
+
+        }
+        return ans;
+    }
+}

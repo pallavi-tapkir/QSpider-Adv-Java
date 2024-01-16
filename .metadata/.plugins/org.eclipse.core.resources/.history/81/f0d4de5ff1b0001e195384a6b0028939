@@ -1,0 +1,21 @@
+package controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import dao.Employeedao;
+import springmvc_employee.dto.Employee;
+
+@Controller
+public class EmployeeController {
+	@Autowired
+	private Employeedao employeedao;
+	
+	@RequestMapping("/register")
+	public ModelAndView register() {
+		ModelAndView modelAndView = new ModelAndView();
+	}
+}

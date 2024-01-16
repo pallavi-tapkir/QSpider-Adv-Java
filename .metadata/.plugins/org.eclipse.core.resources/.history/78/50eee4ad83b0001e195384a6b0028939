@@ -1,0 +1,29 @@
+package com.pallavi.ds.adv;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MaxJobs {
+
+	public static void main(String[] args) {
+		
+
+	}
+	
+	class Job{
+        Integer startTime;
+        Integer EndTime;
+        Job(Integer startTime, Integer EndTime){
+            this.startTime = startTime;
+            this.EndTime = EndTime;
+        }
+    }
+
+    public int solve(ArrayList<Integer> A, ArrayList<Integer> B) {
+        List<Job> jobs = new ArrayList<Job>(A.size());
+        for(int i=0; i<A.size(); i++){
+            jobs.set(i,new Job(A.get(i), B.get(i)));
+        }
+    }
+
+}

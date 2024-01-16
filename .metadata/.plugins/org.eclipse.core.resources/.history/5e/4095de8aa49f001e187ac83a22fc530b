@@ -1,0 +1,17 @@
+package hibernate_task1;
+
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+public class EmployeeCRUD {
+
+	public void saveEmployee() {
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("pallavi");
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

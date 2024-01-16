@@ -1,0 +1,10 @@
+1704508996312	Rename type 'AadharCard'
+1704509046927	Rename type 'Person'
+1704509057896	Rename field 'pid'
+1704509087074	Rename field 'address'
+1704509693980	Rename type 'Persondao'
+1704510172449	Rename type 'Floordao'
+1704510220947	Rename type 'PersonController'
+1704510430606	Rename local variable 'buuldingdao'
+1704510463550	Rename local variable 'buildingdaoilding'
+1704510848868	Delete elements

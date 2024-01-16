@@ -1,0 +1,5 @@
+package com.jsp.springboot_task1.dto;
+
+public class Fruit {
+
+}

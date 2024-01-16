@@ -1,0 +1,30 @@
+package com.pallavi.ds.adv;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class NoOfCoins {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public static int solve(int A) {
+        List<Integer> availableCurrencies = new ArrayList<Integer>();
+        int divisor = 1220703125;
+        int newno = A;
+        int noOfCurrencyRequired = 0;
+
+        while(newno > 0){
+            if(newno % divisor == 0){
+                noOfCurrencyRequired++;
+                newno = newno / divisor;
+            }else{
+                divisor = divisor / 5;
+            }
+        }
+        return noOfCurrencyRequired;
+    }
+
+}

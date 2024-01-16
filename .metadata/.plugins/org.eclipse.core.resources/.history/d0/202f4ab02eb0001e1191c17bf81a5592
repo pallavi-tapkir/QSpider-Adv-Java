@@ -1,0 +1,12 @@
+package springmvc_employee.dto.config;
+
+import javax.persistence.EntityManager;
+
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+@ComponentScan(basePackages = "springmvc_employee")
+public class EmployeeConfig {
+	public EntityManager
+}

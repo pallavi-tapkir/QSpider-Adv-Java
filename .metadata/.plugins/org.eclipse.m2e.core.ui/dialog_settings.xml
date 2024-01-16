@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\SC\eclipse-workspace\student_management_system"/>
+			<item value="C:\Users\SC\eclipse-workspace\DataStructures\src\heap\ThreeGreaterNoProduct.java"/>
+			<item value="C:\Users\SC\eclipse-workspace\OneToOneUniDirExam"/>
+			<item value="C:\Users\SC\eclipse-workspace\OneToManyUniDirection"/>
+			<item value="C:\Users\SC\eclipse-workspace\product_servlet\src\main\java\product_servlet\ProductController.java"/>
+			<item value="C:\Users\SC\eclipse-workspace\servlet_task2\src\main\webapp\WEB-INF\web.xml"/>
+			<item value="C:\Users\SC\eclipse-workspace\servlet_task1\src\main\webapp\first.html"/>
+			<item value="C:\Users\SC\eclipse-workspace\cascade_fetch_types\src\main\java\cascade\fetch\dto\Person.java"/>
+			<item value="C:\Users\SC\eclipse-workspace\ManyToManyBiDirectional\src\main\java\manytomany\dto\Person.java"/>
+			<item value="C:\Users\SC\eclipse-workspace\ManyToManyUniDirection\src\main\java\manytomany\controller\PersonMain.java"/>
+			<item value="C:\Users\SC\eclipse-workspace\DataStructures\src\com\pallavi\ds\adv\binarySearch\FindIndexOfRotatedArray.java"/>
+			<item value="C:\Users\SC\eclipse-workspace\jdbc_task1"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="All Catalogs"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="com.jsp.springmvc_employee"/>
+		</list>
+		<list key="groupId">
+			<item value="com.jsp"/>
+		</list>
+		<list key="artifactId">
+			<item value="springmvc_employee"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\SC\eclipse-workspace\springboot_item"/>
+			<item value="C:\Users\SC\eclipse-workspace\springboot_task1"/>
+			<item value="C:\Users\SC\eclipse-workspace\batchexecution"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+</section>

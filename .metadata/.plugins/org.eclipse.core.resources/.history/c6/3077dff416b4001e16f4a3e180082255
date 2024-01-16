@@ -1,0 +1,5 @@
+package com.jsp.springboot_item.dao;
+
+public class ItemDAO {
+
+}

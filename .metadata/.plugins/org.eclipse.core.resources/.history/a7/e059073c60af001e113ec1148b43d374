@@ -1,0 +1,10 @@
+package springcore;
+
+public class DPA implements School {
+
+	@Override
+	public void name() {
+		System.out.println("School name is DPA");
+	}
+	
+}

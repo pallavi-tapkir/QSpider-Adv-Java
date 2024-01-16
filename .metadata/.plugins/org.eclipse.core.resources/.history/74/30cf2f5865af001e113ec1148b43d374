@@ -1,0 +1,10 @@
+package springcore;
+
+import org.springframework.beans.factory.BeanFactory;
+
+public class StudentMain {
+	public static void main(String[] args) {
+		BeanFactory beanFactory = ClassPathXmlApplicationContext("student.xml");
+		Student student1 = (Student) beanFactory.getBean("stud1");
+	}
+}

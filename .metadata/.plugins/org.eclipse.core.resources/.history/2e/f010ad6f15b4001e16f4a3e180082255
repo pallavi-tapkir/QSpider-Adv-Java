@@ -1,0 +1,5 @@
+package com.jsp.springboot_item.dto;
+
+public class Item {
+
+}
