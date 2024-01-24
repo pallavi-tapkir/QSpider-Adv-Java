@@ -10,16 +10,16 @@ public class Item {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
-	private String nameString;
+	private String name;
 	private double cost;
 	
 	public Item() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Item(String nameString, double cost) {
+	public Item(String name, double cost) {
 		super();
-		this.nameString = nameString;
+		this.name = name;
 		this.cost = cost;
 	}
 
@@ -31,12 +31,12 @@ public class Item {
 		this.id = id;
 	}
 
-	public String getNameString() {
-		return nameString;
+	public String getname() {
+		return name;
 	}
 
-	public void setNameString(String nameString) {
-		this.nameString = nameString;
+	public void setname(String name) {
+		this.name = name;
 	}
 
 	public double getCost() {
@@ -49,7 +49,7 @@ public class Item {
 
 	@Override
 	public String toString() {
-		return "Item [id=" + id + ", nameString=" + nameString + ", cost=" + cost + "]";
+		return "Item [id=" + id + ", name=" + name + ", cost=" + cost + "]";
 	}
 	
 	

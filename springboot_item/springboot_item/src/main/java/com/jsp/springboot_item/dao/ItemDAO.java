@@ -26,6 +26,7 @@ public class ItemDAO {
 			item = itemRepo.save(item);
 			return item;
 		}else {
+			System.out.println("Item not found");
 			return null;
 		}
 	}
